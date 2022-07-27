@@ -20,7 +20,7 @@ function Info() {
         </article>
       </div>
     </section>
-  )
+  );
 }
 
-export default Info
+export default Info;

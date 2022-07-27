@@ -9,7 +9,7 @@
   box-sizing: border-box;
 }
 #root {
-  max-width: 1400px;
+  max-width: 2250px;
   margin: 0 auto;
 }
 
@@ -25,32 +25,12 @@ body {
 
 
 
-.main {
-  width: 90%;
-  min-width: 300px;
-  padding: 20px;
-  margin: 80px auto;
-}
+
 /* INFO */
 
 
 /* SKILLS */
 
-.Skills--list li img {
-  width: 100px;
-}
+
 
 /* FOOTER */
-.Footer--social-media {
-  display: flex;
-  align-items: center;
-}
-.Footer--social-media__title {
-  margin-right: 10px;
-}
-.Footer--social-media__list {
-  display: flex;
-  width: 60%;
-  justify-content: space-around;
-  list-style: none;
-}

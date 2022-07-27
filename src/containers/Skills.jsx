@@ -1,12 +1,14 @@
-import React from 'react'
+import React from 'react';
 import htmlLogo from '@logos/html-logo.svg';
 import cssLogo from '@logos/css-logo.png';
-import javaScriptLogo from '@logos/javascript-logo.svg';
-import reactLogo from '@logos/react-logo.svg';
+import javaScriptLogo from '@logos/javascript-logo.png';
+import reactLogo from '@logos/react-logo.png';
+import '@styles/Skills.css';
 
 function Skills() {
   return (
     <section className="Skills">
+      <h3 className="Skills--title">Skills</h3>
       <ul className="Skills--list">
         <li>
           <img src={htmlLogo} alt="html image" />
@@ -26,7 +28,7 @@ function Skills() {
         </li>
       </ul>
     </section>
-  )
+  );
 }
 
-export default Skills
+export default Skills;

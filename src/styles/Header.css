@@ -8,7 +8,7 @@
 .Header--nav {
   display: flex;
   width: 100%;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 .Header--logo {
@@ -24,6 +24,13 @@
 .Header--logo img {
   filter: brightness(0) saturate(100%) invert(10%) sepia(100%) saturate(6889%) hue-rotate(271deg) brightness(92%) contrast(111%);
   width: 100%;
+}
+.Header--hamburger i{
+  color: var(--color-primary);
+  width: 60px;
+  font-size: 30px;
+  text-align: center;
+  display: none;
 }
 
 
@@ -51,4 +58,14 @@
 .Header--list li a:hover{
   text-decoration: underline;
   font-size: 19px;
+}
+
+@media (max-width: 875px) {
+  .Header--list {
+    display: none;
+  }
+  
+  .Header--hamburger i {
+    display: block;
+  }
 }

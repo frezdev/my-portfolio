@@ -1,9 +1,15 @@
-import React from 'react'
+import React from 'react';
+import Info from '@containers/Info';
+import Skills from '@containers/Skills';
+import '@styles/Home.css';
 
 function Home() {
   return (
-    <div>Home</div>
-  )
+    <main className="Home">
+      <Info />
+      <Skills />
+    </main>
+  );
 }
 
-export default Home
+export default Home;
