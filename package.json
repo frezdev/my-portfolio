@@ -1,10 +1,14 @@
 {
   "name": "my-portfolio",
+  "private": true,
   "version": "1.0.0",
   "description": "Personal Portfilio",
   "main": "src/index.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
   "repository": {
     "type": "git",
@@ -17,6 +21,17 @@
     "Web",
     "React"
   ],
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.3.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.15",
+    "@types/react-dom": "^18.0.6",
+    "@vitejs/plugin-react": "^2.0.0",
+    "vite": "^3.0.0"
+  },
   "author": "Carlos Florez <carlos.andres.ff2912@gmail.com>",
   "license": "MIT",
   "bugs": {

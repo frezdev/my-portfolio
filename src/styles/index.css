@@ -1,12 +1,16 @@
 /* FILTER GENERATOR -> https://angel-rs.github.io/css-color-filter-generator/ */
 :root {
-  --color-primary : rgb(42, 243, 176);
-  --color-secundary: rgb(68, 171, 255);
+  --color-primary : #6e07f3;
+  --color-secundary: rgb(255, 255, 255);
 }
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+#root {
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
 a {
@@ -18,113 +22,35 @@ body {
 }
 
 /* HEADER */
-.Header {
-  display: flex;
-  padding-left: 15px;
-  background: linear-gradient(170deg, var(--color-secundary), var(--color-primary));
-  justify-content: space-between;
-  align-items: center;
-  height: 80px;
-}
-
-.Header--logo {
-  border: #ffffff solid 2px;
-  border-radius: 5px;
-  padding: 5px;
-  height: 60px;
-  width: 60px;
-  display: grid;
-  place-items: center;
-}
-.Header--logo img {
-  filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%) hue-rotate(255deg) brightness(105%) contrast(103%);
-  width: 100%;
-}
-
-.Header--nav {
-  width: 48%;
-}
-
-.Header--list {
-  display: grid;
-  grid-template-rows: 40px;
-  grid-template-columns: repeat(auto-fit, 100px);
-  align-items: center;
-  justify-items: center;
-  justify-content: end;
-}
-
-.Header--list li {
-  list-style: none;
-}
-
-.Header--list li a {
-  color: #ffffff;
-  font-size: 18px;
-  text-shadow: 0 1px 5px rgba(0, 0, 0, 0.568);
-}
-
-.Header--list li a:hover{
-  text-decoration: underline;
-  font-size: 19px;
-}
 
 
 
 .main {
   width: 90%;
   min-width: 300px;
-  padding: 30px;
+  padding: 20px;
   margin: 80px auto;
 }
 /* INFO */
-.Info {
-  display: flex;
-  width: 100%;
-  justify-content: space-around;
-  margin-bottom: 100px;
-}
-.Info-image-profile {
-  padding: 20px;
-  width: 300px;
-}
-.Info-image-profile img {
-  width: 100%;
-  border-radius: 15px;
-}
 
-.Info--container {
-  display: grid;
-  width: 60%;
-  padding: 10px;
-  min-width: 400px;
-  align-content: space-evenly;
-}
-
-.Info--description {
-  text-align: justify;
-}
-
-@media (max-width: 1011px) {
-  .Info-image-profile {
-    width: 40%;
-    min-width: 300px;
-  }
-  .Info--container {
-    width: 320px;
-  }
-}
-@media (max-width: 840px) {
-  .Info {
-    flex-wrap: wrap;
-  }
-  .Info--container {
-    height: 350px;
-  }
-}
 
 /* SKILLS */
 
 .Skills--list li img {
   width: 100px;
+}
+
+/* FOOTER */
+.Footer--social-media {
+  display: flex;
+  align-items: center;
+}
+.Footer--social-media__title {
+  margin-right: 10px;
+}
+.Footer--social-media__list {
+  display: flex;
+  width: 60%;
+  justify-content: space-around;
+  list-style: none;
 }
