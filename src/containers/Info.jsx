@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import '@styles/Info.css';
 
 function Info() {
@@ -15,8 +16,8 @@ function Info() {
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam non doloribus eveniet ratione laborum dolores, voluptatibus obcaecati totam. Mollitia ab accusamus aut porro fugiat alias eveniet nemo vero quas non!
         </p>
         <article className="Info--links">
-          <a className="Info--link Info--link__primary" href="./public/contact.html">Contact</a>
-          <a className="Info--link Info--link__secundary" href="./public/about.html">About</a>
+          <Link className="Info--link Info--link__primary" to="/contact">Contact</Link>
+          <Link className="Info--link Info--link__secundary" to="/about">About</Link>
         </article>
       </div>
     </section>

@@ -21,10 +21,6 @@ const navData = [
   {
     name: 'About',
     route: '/about',
-  },
-  {
-    name: 'Skills',
-    route: '/kills',
   }
 ]
 
