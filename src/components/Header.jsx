@@ -41,7 +41,13 @@ function Header() {
         </span>
         <ul className="Header--menu-desktop Header--list">
           {navData.map(item => {
-            const underline = pathname === item.route ? 'Header--menu-desktop__underline' : '';
+
+            let underline;
+            if (pathname === item.route) {
+              document.title = `Carlos Florez | ${item.name}`
+              underline = 'Header--menu-desktop__underline';
+            }
+
             return (
               <NavItem
                 underline={underline}
