@@ -1,9 +1,29 @@
+.Footer {
+  display: flex;
+  height: 50vh;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  background: linear-gradient(var(--color-primary), rgb(8, 19, 58));
+  color: #fff;
+  position: relative;
+}
+.Footer > p {
+  padding: 20px;
+}
 .Footer--social-media {
   display: flex;
+  height: 60%;
+  width: 80%;
+  flex-direction: column;
+  justify-content: space-around;
   align-items: center;
+  text-align: center;
 }
 .Footer--social-media__title {
-  margin-right: 10px;
+  font-size: 30px;
+  text-shadow: 2px 5px 5px rgba(35, 34, 34, 0.605);
 }
 .Footer--social-media__list {
   display: flex;
