@@ -5,15 +5,13 @@
   align-self: center;
   width: 100%;
   height: 100%;
-  border-radius: 15px;
+  border-radius: 10px;
   overflow: hidden;
   border: solid .5px rgba(35, 34, 34, 0.151);
-  transition: .7s;
+  transition: .2s;
 }
 .ProjectItem:hover {
   box-shadow: 0 1px 10px rgba(54, 54, 54, 0.445);
-  width: 102%;
-  height: 102%;
 }
 
 .ProjectItem--image-container {
@@ -41,7 +39,7 @@
 
 .ProjectItem--description {
   margin-bottom: 10px;
-  text-align: justify;
+  /* text-align: justify; */
   cursor: default;
 }
 
@@ -76,7 +74,6 @@
   transition: .3s;
 }
 .Projects--links__view:hover {
-  color: #6e07f3ad;
   text-decoration: underline;
 }
 .Projects--links__repo {
